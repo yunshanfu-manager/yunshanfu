@@ -4,6 +4,7 @@ import com.qf.common.BaseResp;
 import com.qf.dao.UserMapper;
 import com.qf.pojo.User;
 import com.qf.service.UserService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
@@ -109,7 +110,7 @@ public class UserServiceImpl implements UserService {
                 }
             } else {
                 baseResp.setCode(202);
-                baseResp.setMessage("验证码输入有误！");
+                baseResp.setMessage("验证码输入有误");
             }
         } else {
             baseResp.setCode(203);
