@@ -7,7 +7,7 @@ import javax.persistence.metamodel.IdentifiableType;
 
 @Data
 @Entity
-@Table(name = "bank_card")
+@Table(name = "bank_hotcard")
 public class Bankcard {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -4,5 +4,5 @@ import com.qf.common.BaseResp;
 
 public interface BankcardService {
     BaseResp findAll();
-    BaseResp findById(Integer id);
+
 }

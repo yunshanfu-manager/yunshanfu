@@ -23,15 +23,9 @@ public class BankcardServiceimpl implements BankcardService {
         baseResp.setData(all);
         baseResp.setMessage("查询银行卡成功");
         return baseResp;
+
+
     }
 
-    @Override
-    public BaseResp findById(Integer id) {
-        Optional<Bankcard> byId = bankcardRespository.findById(id);
-        BaseResp baseResp = new BaseResp();
-        baseResp.setCode(200);
-        baseResp.setData(byId.get());
-        baseResp.setMessage("ID查询银行卡成功");
-        return baseResp;
-    }
+
 }
