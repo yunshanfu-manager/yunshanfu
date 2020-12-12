@@ -4,7 +4,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://124.71.157.165:3306/yunshanfu?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/yunshanfu?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: root
 
@@ -20,7 +20,7 @@ spring:
   mail:
     host: smtp.qq.com
     #发送邮件的人
-    username:
+    username: 1432485049@qq.com
     #QQ邮箱的授权码
     password: bcyjzoucvaougiia
     smtp.auth: true
