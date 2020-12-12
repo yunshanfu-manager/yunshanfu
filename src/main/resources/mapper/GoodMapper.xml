@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.dao.GoodMapper">
+
+
+    <select id="findAllByCid" resultType="com.qf.pojo.Good">
+        SELECT g.* FROM category c,goods g WHERE g.`parent` = c.`cid` AND c.`cid`= #{arg0}
+    </select>
+
+    <select id="findGoodByGid" resultType="com.qf.pojo.Good">
+        SELECT * FROM goods  WHERE goods.`gid` = #{arg0}
+    </select>
+
+
+
+
+    <select id="findByGoodShopName" resultType="com.qf.pojo.GoodShopName">
+        SELECT * FROM goods WHERE goods.`tag`=1
+    </select>
+
+    <select id="findAllByTag1" resultType="com.qf.pojo.Good">
+        SELECT * FROM goods WHERE goods.`tag`=1
+    </select>
+
+    <select id="findAllByTag2" resultType="com.qf.pojo.Good">
+        SELECT * FROM goods WHERE goods.`tag`=2
+    </select>
+    <select id="findAllByTag3" resultType="com.qf.pojo.Good">
+        SELECT * FROM goods WHERE goods.`tag`=3
+    </select>
+
+    <select id="findAllByTag4" resultType="com.qf.pojo.Good">
+        SELECT * FROM goods WHERE goods.`tag`=4
+    </select>
+
+    <select id="findAllByTag5" resultType="com.qf.pojo.Good">
+        SELECT * FROM goods WHERE goods.`tag`=5
+    </select>
+
+
+    <select id="findAllByTag6" resultType="com.qf.pojo.Good">
+        SELECT * FROM goods WHERE goods.`tag`=6
+    </select>
+
+    <select id="findAllByTag7" resultType="com.qf.pojo.Good">
+        SELECT * FROM goods WHERE goods.`tag`=7
+    </select>
+
+    <select id="findAllByTag8" resultType="com.qf.pojo.Good">
+        SELECT * FROM goods WHERE goods.`tag`=8
+    </select>
+
+    <select id="findAllByTag9" resultType="com.qf.pojo.Good">
+        SELECT * FROM goods WHERE goods.`tag`=9
+    </select>
+
+
+</mapper>
